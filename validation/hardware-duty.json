@@ -1,0 +1,389 @@
+{
+  "Ok": true,
+  "ExactRestore": true,
+  "Error": null,
+  "Samples": [
+    {
+      "Phase": "before",
+      "Sample": {
+        "Temperature": 69,
+        "Fan1Rpm": 3489,
+        "Fan2Rpm": 3137,
+        "Fan1Percent": 45,
+        "Fan2Percent": 40,
+        "Boost": false
+      }
+    },
+    {
+      "Phase": "target-80",
+      "State": {
+        "Mode": "manual",
+        "Requested": 80,
+        "Effective": 80,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 75,
+          "Fan1Rpm": 3796,
+          "Fan2Rpm": 3393,
+          "Fan1Percent": 53,
+          "Fan2Percent": 53,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-80",
+      "State": {
+        "Mode": "manual",
+        "Requested": 80,
+        "Effective": 80,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 78,
+          "Fan1Rpm": 4278,
+          "Fan2Rpm": 4161,
+          "Fan1Percent": 63,
+          "Fan2Percent": 63,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-80",
+      "State": {
+        "Mode": "manual",
+        "Requested": 80,
+        "Effective": 80,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 72,
+          "Fan1Rpm": 4739,
+          "Fan2Rpm": 4673,
+          "Fan1Percent": 73.5,
+          "Fan2Percent": 73.5,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-80",
+      "State": {
+        "Mode": "manual",
+        "Requested": 80,
+        "Effective": 80,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 70,
+          "Fan1Rpm": 5085,
+          "Fan2Rpm": 5185,
+          "Fan1Percent": 80,
+          "Fan2Percent": 80,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-60",
+      "State": {
+        "Mode": "manual",
+        "Requested": 60,
+        "Effective": 65,
+        "Hint": "\u6E29\u5EA6\u4FDD\u62A4 \u00B7 \u5F53\u524D\u6700\u4F4E\u98CE\u91CF 65%",
+        "Sample": {
+          "Temperature": 75,
+          "Fan1Rpm": 4867,
+          "Fan2Rpm": 4929,
+          "Fan1Percent": 72,
+          "Fan2Percent": 72,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-60",
+      "State": {
+        "Mode": "manual",
+        "Requested": 60,
+        "Effective": 65,
+        "Hint": "\u6E29\u5EA6\u4FDD\u62A4 \u00B7 \u5F53\u524D\u6700\u4F4E\u98CE\u91CF 65%",
+        "Sample": {
+          "Temperature": 74,
+          "Fan1Rpm": 4482,
+          "Fan2Rpm": 4417,
+          "Fan1Percent": 65,
+          "Fan2Percent": 65,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-60",
+      "State": {
+        "Mode": "manual",
+        "Requested": 60,
+        "Effective": 65,
+        "Hint": "\u6E29\u5EA6\u4FDD\u62A4 \u00B7 \u5F53\u524D\u6700\u4F4E\u98CE\u91CF 65%",
+        "Sample": {
+          "Temperature": 74,
+          "Fan1Rpm": 4455,
+          "Fan2Rpm": 4417,
+          "Fan1Percent": 65,
+          "Fan2Percent": 65,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-60",
+      "State": {
+        "Mode": "manual",
+        "Requested": 60,
+        "Effective": 65,
+        "Hint": "\u6E29\u5EA6\u4FDD\u62A4 \u00B7 \u5F53\u524D\u6700\u4F4E\u98CE\u91CF 65%",
+        "Sample": {
+          "Temperature": 76,
+          "Fan1Rpm": 4464,
+          "Fan2Rpm": 4417,
+          "Fan1Percent": 65,
+          "Fan2Percent": 65,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-45",
+      "State": {
+        "Mode": "manual",
+        "Requested": 45,
+        "Effective": 65,
+        "Hint": "\u6E29\u5EA6\u4FDD\u62A4 \u00B7 \u5F53\u524D\u6700\u4F4E\u98CE\u91CF 65%",
+        "Sample": {
+          "Temperature": 74,
+          "Fan1Rpm": 4455,
+          "Fan2Rpm": 4417,
+          "Fan1Percent": 65,
+          "Fan2Percent": 65,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-45",
+      "State": {
+        "Mode": "manual",
+        "Requested": 45,
+        "Effective": 45,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 71,
+          "Fan1Rpm": 4455,
+          "Fan2Rpm": 4417,
+          "Fan1Percent": 62.5,
+          "Fan2Percent": 62.5,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-45",
+      "State": {
+        "Mode": "manual",
+        "Requested": 45,
+        "Effective": 45,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 72,
+          "Fan1Rpm": 4060,
+          "Fan2Rpm": 3905,
+          "Fan1Percent": 52,
+          "Fan2Percent": 52,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-45",
+      "State": {
+        "Mode": "manual",
+        "Requested": 45,
+        "Effective": 45,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 72,
+          "Fan1Rpm": 3558,
+          "Fan2Rpm": 3393,
+          "Fan1Percent": 45,
+          "Fan2Percent": 45,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-81",
+      "State": {
+        "Mode": "manual",
+        "Requested": 81,
+        "Effective": 81,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 72,
+          "Fan1Rpm": 3648,
+          "Fan2Rpm": 3649,
+          "Fan1Percent": 53,
+          "Fan2Percent": 53,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-81",
+      "State": {
+        "Mode": "manual",
+        "Requested": 81,
+        "Effective": 81,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 72,
+          "Fan1Rpm": 4162,
+          "Fan2Rpm": 4161,
+          "Fan1Percent": 63,
+          "Fan2Percent": 63,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-81",
+      "State": {
+        "Mode": "manual",
+        "Requested": 81,
+        "Effective": 81,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 74,
+          "Fan1Rpm": 4617,
+          "Fan2Rpm": 4673,
+          "Fan1Percent": 73.5,
+          "Fan2Percent": 73.5,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "target-81",
+      "State": {
+        "Mode": "manual",
+        "Requested": 81,
+        "Effective": 81,
+        "Hint": "\u53CC\u98CE\u6247\u8054\u52A8 \u00B7 \u8BBE\u5B9A\u503C\u4E3A\u5360\u7A7A\u6BD4",
+        "Sample": {
+          "Temperature": 74,
+          "Fan1Rpm": 5049,
+          "Fan2Rpm": 4929,
+          "Fan1Percent": 81,
+          "Fan2Percent": 81,
+          "Boost": false
+        },
+        "Owned": true
+      }
+    },
+    {
+      "Phase": "auto",
+      "State": {
+        "Mode": "auto",
+        "Requested": 81,
+        "Effective": -1,
+        "Hint": "\u5DF2\u4EA4\u8FD8\u539F\u6765\u7684\u81EA\u52A8\u63A7\u5236",
+        "Sample": {
+          "Temperature": 75,
+          "Fan1Rpm": 5121,
+          "Fan2Rpm": 4929,
+          "Fan1Percent": 78.5,
+          "Fan2Percent": 73.5,
+          "Boost": false
+        },
+        "Owned": false
+      }
+    },
+    {
+      "Phase": "auto",
+      "State": {
+        "Mode": "auto",
+        "Requested": 81,
+        "Effective": -1,
+        "Hint": "\u5DF2\u4EA4\u8FD8\u539F\u6765\u7684\u81EA\u52A8\u63A7\u5236",
+        "Sample": {
+          "Temperature": 73,
+          "Fan1Rpm": 4979,
+          "Fan2Rpm": 4673,
+          "Fan1Percent": 75.5,
+          "Fan2Percent": 70.5,
+          "Boost": false
+        },
+        "Owned": false
+      }
+    },
+    {
+      "Phase": "auto",
+      "State": {
+        "Mode": "auto",
+        "Requested": 81,
+        "Effective": -1,
+        "Hint": "\u5DF2\u4EA4\u8FD8\u539F\u6765\u7684\u81EA\u52A8\u63A7\u5236",
+        "Sample": {
+          "Temperature": 74,
+          "Fan1Rpm": 4834,
+          "Fan2Rpm": 4673,
+          "Fan1Percent": 72,
+          "Fan2Percent": 67,
+          "Boost": false
+        },
+        "Owned": false
+      }
+    },
+    {
+      "Phase": "auto",
+      "State": {
+        "Mode": "auto",
+        "Requested": 81,
+        "Effective": -1,
+        "Hint": "\u5DF2\u4EA4\u8FD8\u539F\u6765\u7684\u81EA\u52A8\u63A7\u5236",
+        "Sample": {
+          "Temperature": 74,
+          "Fan1Rpm": 4637,
+          "Fan2Rpm": 4417,
+          "Fan1Percent": 68.5,
+          "Fan2Percent": 63.5,
+          "Boost": false
+        },
+        "Owned": false
+      }
+    },
+    {
+      "Phase": "final",
+      "Sample": {
+        "Temperature": 75,
+        "Fan1Rpm": 4637,
+        "Fan2Rpm": 4417,
+        "Fan1Percent": 67.5,
+        "Fan2Percent": 62.5,
+        "Boost": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+<Window x:Class="FanPanel.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ Title="无界风扇" Icon="Assets/app.ico" Width="540" Height="710" MinWidth="460" MinHeight="530" WindowStartupLocation="CenterScreen" Background="{DynamicResource CanvasBrush}" Foreground="{DynamicResource PrimaryBrush}" FontFamily="Segoe UI Variable Text, Microsoft YaHei UI" FontSize="13">
+ <Grid Margin="18,12,18,14">
+  <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+  <Grid Margin="0,0,0,14"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+   <StackPanel Orientation="Horizontal"><Image Source="Assets/app.png" Width="44" Height="44" Margin="0,0,11,0" RenderOptions.BitmapScalingMode="HighQuality"/><StackPanel><TextBlock Text="无界风扇" FontSize="23" FontWeight="SemiBold"/><TextBlock Text="MECHREVO · WUJIE 14XA" Style="{StaticResource Muted}" Margin="0,4,0,0"/></StackPanel></StackPanel>
+   <Button Grid.Column="1" Width="34" Padding="0" VerticalAlignment="Top" Click="SettingsClick" ToolTip="外观与关于" AutomationProperties.Name="外观与关于">
+    <TextBlock Text="&#xE713;" Style="{StaticResource Glyph}"/>
+    <Button.ContextMenu><ContextMenu Placement="Bottom" HorizontalOffset="-126" Width="160"><MenuItem Header="跟随系统" Tag="System" Click="ThemeClick"/><MenuItem Header="浅色" Tag="Light" Click="ThemeClick"/><MenuItem Header="深色" Tag="Dark" Click="ThemeClick"/><Separator/><MenuItem Header="关于与开源许可" Click="AboutClick"/></ContextMenu></Button.ContextMenu>
+   </Button>
+  </Grid>
+  <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Padding="0,0,3,0">
+   <StackPanel>
+    <Border Style="{StaticResource Card}" Margin="0,0,0,10">
+     <Grid><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
+      <StackPanel><StackPanel Orientation="Horizontal"><Ellipse x:Name="StatusDot" Width="7" Height="7" Fill="{DynamicResource AccentBrush}" Margin="0,0,7,0"/><TextBlock x:Name="ModeText" Text="正在连接" FontWeight="SemiBold"/></StackPanel><TextBlock x:Name="StateHint" Text="正在读取风扇状态…" Style="{StaticResource Muted}" Margin="0,8,12,0" TextWrapping="Wrap" MaxWidth="315" HorizontalAlignment="Left"/></StackPanel>
+      <StackPanel Grid.Column="1" HorizontalAlignment="Right"><TextBlock x:Name="TemperatureText" Text="—°" FontFamily="Bahnschrift" FontSize="34" HorizontalAlignment="Right"/><TextBlock Text="CPU 温度" Style="{StaticResource Muted}" HorizontalAlignment="Right"/></StackPanel>
+     </Grid>
+    </Border>
+    <Grid Margin="0,0,0,10"><Grid.ColumnDefinitions><ColumnDefinition Width="*"/><ColumnDefinition Width="10"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+     <Border Style="{StaticResource Card}"><StackPanel><TextBlock Text="风扇 1" Style="{StaticResource Muted}"/><StackPanel Orientation="Horizontal" Margin="0,7,0,8"><TextBlock x:Name="Fan1Text" Text="—" FontFamily="Bahnschrift" FontSize="27"/><TextBlock Text=" RPM" Style="{StaticResource Muted}" VerticalAlignment="Bottom" Margin="0,0,0,4"/></StackPanel><ProgressBar x:Name="Fan1Bar" Minimum="0" Maximum="100" Height="4"/><TextBlock x:Name="Duty1Text" Text="实际占空比 —" Style="{StaticResource Muted}" Margin="0,8,0,0"/></StackPanel></Border>
+     <Border Grid.Column="2" Style="{StaticResource Card}"><StackPanel><TextBlock Text="风扇 2" Style="{StaticResource Muted}"/><StackPanel Orientation="Horizontal" Margin="0,7,0,8"><TextBlock x:Name="Fan2Text" Text="—" FontFamily="Bahnschrift" FontSize="27"/><TextBlock Text=" RPM" Style="{StaticResource Muted}" VerticalAlignment="Bottom" Margin="0,0,0,4"/></StackPanel><ProgressBar x:Name="Fan2Bar" Minimum="0" Maximum="100" Height="4"/><TextBlock x:Name="Duty2Text" Text="实际占空比 —" Style="{StaticResource Muted}" Margin="0,8,0,0"/></StackPanel></Border>
+    </Grid>
+    <Border Style="{StaticResource Card}" Margin="0,0,0,10">
+     <StackPanel>
+      <Grid><TextBlock Text="散热控制" FontWeight="SemiBold"/><TextBlock x:Name="TargetText" Text="65%" HorizontalAlignment="Right" Foreground="{DynamicResource AccentBrush}" FontSize="20" FontFamily="Bahnschrift"/></Grid>
+      <TextBlock Text="双风扇联动 · 每格 1%" Style="{StaticResource Muted}" Margin="0,2,0,10"/>
+      <Slider x:Name="DutySlider" Minimum="20" Maximum="100" Value="65" TickFrequency="1" IsSnapToTickEnabled="True" SmallChange="1" LargeChange="5" ValueChanged="SliderChanged" AutomationProperties.Name="风扇目标占空比" ToolTip="20–100%，手动模式下拖动即生效"/>
+      <Grid Margin="0,3,0,12"><TextBlock Text="20%" Style="{StaticResource Muted}"/><TextBlock Text="100%" HorizontalAlignment="Right" Style="{StaticResource Muted}"/></Grid>
+      <UniformGrid Columns="3"><Button x:Name="AutoButton" Content="自动" Click="AutoClick" Margin="0,0,5,0" IsEnabled="False"/><Button x:Name="ManualButton" Content="手动风量" Click="ManualClick" Margin="0,0,5,0" IsEnabled="False"/><Button x:Name="BoostButton" Content="满速强冷" Click="BoostClick" IsEnabled="False"/></UniformGrid>
+      <TextBlock x:Name="ControlHint" Text="选择手动后，滑块会实时调整风量。" Style="{StaticResource Muted}" TextWrapping="Wrap" Margin="0,10,0,0"/>
+     </StackPanel>
+    </Border>
+    <Border Style="{StaticResource Card}" Background="{DynamicResource AccentSoftBrush}">
+     <StackPanel><TextBlock Text="温度保护已开启" FontWeight="SemiBold"/><TextBlock Text="高温时自动提高最低风量；85°C 进入强冷，降至 78°C 后恢复。关闭窗口会交还原来的控制状态。" Style="{StaticResource Muted}" Margin="0,6,0,0" TextWrapping="Wrap"/></StackPanel>
+    </Border>
+    <Border x:Name="ErrorPanel" Visibility="Collapsed" Margin="0,10,0,0" Padding="12" CornerRadius="8" Background="#FFF4CE"><TextBlock x:Name="ErrorText" Foreground="#754A00" TextWrapping="Wrap"/></Border>
+   </StackPanel>
+  </ScrollViewer>
+  <Grid Grid.Row="2" Margin="0,12,0,0"><TextBlock x:Name="ConnectionText" Text="正在连接本机驱动" Style="{StaticResource Muted}" FontSize="11"/><TextBlock Text="2.0.1 · Fluent" Style="{StaticResource Muted}" FontSize="11" HorizontalAlignment="Right"/></Grid>
+ </Grid>
+</Window>

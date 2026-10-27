@@ -1,0 +1,46 @@
+{
+  "Ok": true,
+  "Error": null,
+  "Results": [
+    {
+      "Scenario": "heartbeat timeout",
+      "ExactRestore": true,
+      "Sample": {
+        "Temperature": 79,
+        "Fan1Rpm": 5014,
+        "Fan2Rpm": 4673,
+        "Fan1Percent": 77,
+        "Fan2Percent": 72,
+        "Boost": false
+      }
+    },
+    {
+      "Scenario": "worker process terminated; frontend recovery",
+      "ExactRestore": true,
+      "Sample": {
+        "Temperature": 81,
+        "Fan1Rpm": 4900,
+        "Fan2Rpm": 4929,
+        "Fan1Percent": 76.5,
+        "Fan2Percent": 71.5,
+        "Boost": false
+      }
+    },
+    {
+      "Scenario": "parent process exited without cleanup; guard recovery",
+      "ExactRestore": true,
+      "Sample": {
+        "Temperature": 83,
+        "Fan1Rpm": 5085,
+        "Fan2Rpm": 5185,
+        "Fan1Percent": 79.5,
+        "Fan2Percent": 74.5,
+        "Boost": false
+      }
+    },
+    {
+      "Scenario": "orphan guard exits",
+      "Passed": true
+    }
+  ]
+}
